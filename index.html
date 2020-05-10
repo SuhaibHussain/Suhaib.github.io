@@ -3,15 +3,31 @@
 <head>
 <body>
 	<title>Suhaib Hussain</title>
-	<div class="img1">
+	
+	<div class="img1" id="Home">
+		<div class="container">
+		<header>
+		<nav>
+			<ul>
+				<li><a class="nav-link scroll" href="#Home">Home</a></li>
+				<li><a class="nav-link scroll" href="#AboutMe">About Me</a></li>
+				<li><a href="#Resume">Resume</a></li>
+				<li><a href="#Skills">Skills</a></li>
+				<li><a href="#ContactMe">Contact Me</a></li>
+				<li><a href="#Education">Education</a></li>
+			</ul>
+		</nav>
+	</header>
+</div>
 	<div class="text">
+		
 		<span class="border">
 			Web Developer
 		</span>
 	</div>
 </div>
 	
-		<div class="DP">
+		<div class="DP" id="AboutMe">
 		<div class="textabout">
 			<span class="border">
 				About Me
@@ -23,7 +39,7 @@
 		</div>
 	</div>
 
-	<div class="img2">
+	<div class="img2" id="Skills">
 	<div class="textwhatiknow">
 		<span class="border">
 			Skills
@@ -31,7 +47,7 @@
 	</div>
 </div>
 
-<div class="img3">
+<div class="img3" id="Education">
 	<div class="textedu">
 		<span class="border">
 			Education
@@ -44,14 +60,14 @@
 	<p><a href="https://iisdammam.edu.sa/">High School=International Indian School Dammam,Saudi Arabia</a></p>
 	<p>Under Grad=KJ Somaiya College Of Engineering Vidyavihar,Mumbai</p>
 </section>
-<div class="img6">
+<div class="img6" id="Resume">
 	<div class="textresume">
 		<span class="border">
 			Resume
 		</span>
 	</div>
 </div>
-<div class="img5">
+<div class="img5" id="ContactMe">
 	<div class="textcontact">
 	<span class="border">
 		Contact Me
@@ -76,6 +92,7 @@ body,html{
 	color:#666;
 	line-height: 1.8em;
 	font-weight:400;
+	scroll-behavior: smooth;
 }
 .img1,.img2,.img3,.img4,.img5,.img6,.img7{
 	position:relative;
@@ -188,9 +205,9 @@ color: #ddd;
 	color: black;
 	position: absolute;
 	top: 20%;
-	left: 0.75%;
+	left: 11%;
 	font-family:Arial;
-	font-size: 30px;
+	font-size: 20px;
 	color: white;
 	letter-spacing: 8px;
 	font-weight: 10;
@@ -230,6 +247,49 @@ color: #ddd;
 	color: black;
 	padding:20px;
 }
+.container{
+	
+}
+nav{
+	float: right;
+	
+}
+nav ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+
+}
+nav li{
+display:inline-block;
+margin-left: 70px;
+padding-top: 23px;
+position: relative;
+}
+nav a{
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+nav a:hover{
+	color:#000;
+}
+nav a:before{
+	content: '';
+	display: block;
+	height: 5px;
+	width: 0%;
+	background-color: #444;
+	position: absolute;
+	top: 0;
+
+	transition:all ease-in-out 250ms;
+}
+nav a:hover::before{
+	width: 100%;
+}
 </style>
+</body>
 </head>
 </html>
