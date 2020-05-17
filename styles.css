@@ -20,7 +20,6 @@ body,html{
 	background-image: url(dp7.jpg);
 	min-height: 120%;
 	opacity: .8;
-
 }
 .img2{
 	background-image: url(Skills.jpeg);
@@ -31,7 +30,7 @@ body,html{
 
 }
 .img5{
-	background-image: url(Contactme.jpeg);
+	background-image: url(contactme.jpeg);
 		min-height: 120%;
 }
 .img6{
@@ -46,7 +45,6 @@ body,html{
 .DP{
 	background-image: url(aboutme3.jpg);
 	min-height: 120%;
-
 	position: relative;
 	background-attachment: fixed;
 	background-size: cover;
@@ -83,7 +81,7 @@ color: #ddd;
 	font-size: 27px;
 	letter-spacing: 8px;
 	text-transform: uppercase;
-		font-weight: bold;
+	font-weight: bold;
 }
 .textwhatiknow{
 	position: absolute;
@@ -285,7 +283,6 @@ nav a:hover::before{
   left: 0;
   width: 100%;
   height: 100%;
-
 }
 .container2 .box .contentBx
 {
@@ -392,7 +389,7 @@ border-radius: 50;
 	font-family: 'Roboto',sans-serif;
 }
 svg{
-	position: 	relative;
+	position:relative;
 	width: 150px;
 	height: 150px;
 	z-index: 1000;
