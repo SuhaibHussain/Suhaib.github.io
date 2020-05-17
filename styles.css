@@ -17,9 +17,10 @@ body,html{
 	background-attachment: fixed;
 }
 .img1{
-	background-image: url(DP.jpg);
-	min-height: 100%;
+	background-image: url(dp7.jpg);
+	min-height: 120%;
 	opacity: .8;
+
 }
 .img2{
 	background-image: url(Skills.jpeg);
@@ -30,11 +31,11 @@ body,html{
 
 }
 .img5{
-	background-image: url(contactme.jpeg);
+	background-image: url(Contactme.jpeg);
 		min-height: 120%;
 }
 .img6{
-	background-image: url(AboutME.jpeg);
+	background-image: url(background.jpg);
 		min-height: 120%;
 }
 
@@ -43,7 +44,7 @@ body,html{
 	min-height: 120%;
 }
 .DP{
-	background-image: url(Background.jpg);
+	background-image: url(aboutme3.jpg);
 	min-height: 120%;
 
 	position: relative;
@@ -63,7 +64,8 @@ color: #ddd;
 .textabout{
 	position: absolute;
 	top: 10%;
-	width: 100%;
+	width: 80%;
+	left: 10%;
 	text-align: center;
 	color: white;
 	font-size: 27px;
@@ -74,7 +76,8 @@ color: #ddd;
 .textedu{
 	position: absolute;
 	top: 30%;
-	width: 100%;
+	width: 80%;
+	left: 10%;
 	text-align: center;
 	color: white;
 	font-size: 27px;
@@ -85,7 +88,8 @@ color: #ddd;
 .textwhatiknow{
 	position: absolute;
 	top: 10%;
-	width: 100%;
+	width: 80%;
+	left: 10%;
 	text-align: center;
 	color: white;
 	font-size: 27px;
@@ -97,7 +101,8 @@ color: #ddd;
 .textresume,.textcontact{
 	position: absolute;
 	top: 40%;
-	width: 100%;
+	width: 80%;
+	left: 10%;
 	text-align: center;
 	color: white;
 	font-size: 27px;
@@ -106,13 +111,26 @@ color: #ddd;
 }
 .text{
 	position: absolute;
-	top: 50%;
-	width: 100%;
+	top:58%;
+	width: 	95%;
 	text-align: center;
 	color: white;
 	font-size: 27px;
 	letter-spacing: 8px;
 	text-transform:uppercase;
+	left: 3.5%;
+}
+
+.WTMW{
+	width: 70%;
+	position: absolute;
+	left:26.1%;
+	font-family: Arial;
+	font-size: 47px;
+	color: black;
+	font-weight: 40;
+	top:50.2%;
+	letter-spacing: 12px;
 }
 .textaboutpara{
 	background-color: rgb(0,0,0); /* Fallback color */
@@ -120,25 +138,13 @@ color: #ddd;
 
 	color: black;
 	position: absolute;
-	top: 20%;
-	left: 11%;
-	font-family:Arial;
-	font-size: 20px;
+	top: 45%;
+	left: 3.5%;
+	font-family:cursive;
+	font-size: 35px;
 	color: white;
-	letter-spacing: 8px;
-	font-weight: 10;
-}
-.WTMW{
-
-	position: absolute;
-	left:22%;
-	font-family: Arial;
-	font-size: 50px;
-	color: black;
-	font-weight: 40;
-	top:40%;
-
 	letter-spacing: 10px;
+	
 }
 .textabout .border{
 	background-color:transparent;
@@ -204,10 +210,13 @@ position: relative;
 
 }
 nav a{
-	color: #444;
+	color: black;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: bolder;
+	filter: darken(#444,150%);
+	width: 0;
+
 }
 nav a:hover{
 	color:#000;
@@ -302,10 +311,11 @@ nav a:hover::before{
 /*Progress bar/*/
 .containerskills{
 	position: absolute;
-	width: 1350px;
+	width: 120%;
 	height: 800px;
 	display: flex;
 	justify-content: space-around;
+	left: -15%;
 }
 .containerskills .card{
 	position: relative;
@@ -423,11 +433,64 @@ svg circle:nth-child(2)
 {	stroke-dashoffset:calc(440 - ( 440 * 60) / 100 );
 	stroke: #ff04f7;
 }
-
-
 .containerskills .box2{
 	position: relative;
 	width:150px;
 	height: 150px;
 	transition: 0.5s;
+}
+/*CONTACTME*/
+.containercontact
+{	
+  height: 150px;
+  width: 80vw;
+ 
+  position: absolute;;
+  margin: auto;
+  top: 590px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color:transparent;
+  font-size: 80px;
+}
+.tony
+{
+  display: block;
+  height: 100px;
+  width: 100px;
+
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 80px;
+
+}
+
+.fa-instagram
+{
+  color: #ea3145;
+}
+.fa-envelope
+{
+  color: red;
+}
+.fa-linkedin
+{
+  color: #0e76a8;
+}
+.Suhaib{
+	left: -150%;
+
+}
+a:active
+{
+  box-shadow: inset -7px -7px 17px rgba(255,255,255,0.6),
+              inset 7px 7px 17px rgba(70, 70, 70, 0.12);
 }
