@@ -15,36 +15,43 @@ body,html{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	z-index: 1;
 }
 .img1{
 	background-image: url(dp7.jpg);
 	min-height: 120%;
 	opacity: .8;
+
 }
 .img2{
 	background-image: url(Skills.jpeg);
 	min-height: 120%;
+	z-index: -1;
 }
-.img3{background-image: url(Education.jpeg);
+.img3{background-image: url(uae.jpg);
 			min-height: 120%;
-
+				z-index: -1;
 }
 .img5{
-	background-image: url(contactme.jpeg);
+	background-image: url(Contactme.jpeg);
 		min-height: 120%;
+			z-index: -1;
 }
 .img6{
-	background-image: url(Background.jpg);
+	background-image: url(background.jpg);
 		min-height: 120%;
+			z-index: -1;
 }
 
 .img7{
 	background-image: url(Resume.jpeg);
 	min-height: 120%;
+		z-index: -1;
 }
 .DP{
 	background-image: url(aboutme3.jpg);
 	min-height: 120%;
+
 	position: relative;
 	background-attachment: fixed;
 	background-size: cover;
@@ -81,7 +88,7 @@ color: #ddd;
 	font-size: 27px;
 	letter-spacing: 8px;
 	text-transform: uppercase;
-	font-weight: bold;
+		font-weight: bold;
 }
 .textwhatiknow{
 	position: absolute;
@@ -187,8 +194,9 @@ color: #ddd;
 	letter-spacing: 25px;
 }
 
-.container{
-
+.hussain{
+	
+	left: -450px;
 }
 nav{
 	float: right;
@@ -202,7 +210,7 @@ nav ul{
 }
 nav li{							/*LINE OF THE NAV BAR*/
 display:inline-block;
-margin-left: 70px;
+margin-left: 55px;
 padding-top: 15px;
 position: relative;
 
@@ -242,7 +250,10 @@ nav a:hover::before{
 .upar{
 	position: fixed;
 	left: 30%;
-	z-index: 1;
+	z-index: 3;
+}
+ul{
+	z-index: 3;
 }
 .container2
 {
@@ -283,6 +294,7 @@ nav a:hover::before{
   left: 0;
   width: 100%;
   height: 100%;
+
 }
 .container2 .box .contentBx
 {
@@ -389,7 +401,7 @@ border-radius: 50;
 	font-family: 'Roboto',sans-serif;
 }
 svg{
-	position:relative;
+	position: 	relative;
 	width: 150px;
 	height: 150px;
 	z-index: 1000;
@@ -490,4 +502,84 @@ a:active
 {
   box-shadow: inset -7px -7px 17px rgba(255,255,255,0.6),
               inset 7px 7px 17px rgba(70, 70, 70, 0.12);
+}
+/*BUTTON*/
+.button{
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 14px;
+	text-decoration:none;
+	font-size: 44px;
+	overflow: hidden;
+	transition:0.2s;
+	left: 36%;
+	top: 300px;
+}
+.button:hover{
+		color: #255784;
+		background:#2196f3;
+		box-shadow: 0 0 10px #2196f3,0 0 40px #21963,0 0 80px #2196f3;
+		transition-delay: 1s;	
+}
+.button span{
+	position: absolute;
+	display: block;
+}
+.button span:nth-child(1)
+{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#2196f3);
+}
+.button:hover span:nth-child(1)
+{
+	left: 100%;
+	transition: 1s;
+}
+.button span:nth-child(3)
+{
+	bottom:  0;
+	right:-100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#2196f3);
+}
+.button:hover span:nth-child(3)
+{
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+}
+.button span:nth-child(2)
+{
+	top:  -100%;
+	right:0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#2196f3);
+}
+.button:hover span:nth-child(2)
+{
+    top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+.button span:nth-child(4)
+{
+	bottom:-100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#2196f3);
+}
+.button:hover span:nth-child(4)
+{
+    bottom:  100%;
+	transition: 1s;
+	transition-delay: 0.75s;
 }
