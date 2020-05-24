@@ -17,6 +17,20 @@ body,html{
 	background-attachment: fixed;
 	z-index: 1;
 }
+.sectionlast{
+	background-color:#696969;
+	height: 130px;
+}
+.malayalam{
+	position: relative;
+	font-family: arial;
+
+	color: white;
+	top: 24%;
+	left: 30%;
+	letter-spacing: 11px;
+	font-size: 85%;
+}
 .img1{
 	background-image: url(dp7.jpg);
 	min-height: 120%;
